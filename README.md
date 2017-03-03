@@ -1,6 +1,6 @@
 # Colors
 
-A demo React app built with [💅 `styled-components`](https://github.com/styled-components/styled-components) and [✨ `polished`](https://github.com/styled-components/polished).
+A demo React app built with [`💅 styled-components`](https://github.com/styled-components/styled-components) and [`✨ polished`](https://github.com/styled-components/polished).
 
 ## Structure
 
