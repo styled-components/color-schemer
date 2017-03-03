@@ -5,6 +5,9 @@
   "homepage": "https://styled-components.com/color-schemer/",
   "devDependencies": {
     "gh-pages": "^0.12.0",
+    "lint-staged": "^3.3.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^0.20.0",
     "react-scripts": "0.9.3"
   },
   "dependencies": {
@@ -20,6 +23,14 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  }
+    "deploy": "gh-pages -d build",
+    "lint:staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "pre-commit": "lint:staged"
 }
