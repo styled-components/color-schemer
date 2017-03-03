@@ -5,6 +5,8 @@ import Tiles from '../Tiles';
 
 import { BigTile, Input, Title, ForkBanner, Link, Wrapper } from './style';
 
+const IS_HEX_WITHOUT_HASH = /(^[0-9A-F]{6}$)|(^[0-9A-F]{3}$)/i;
+
 let inverted, color;
 class App extends Component {
   state = {
@@ -19,11 +21,15 @@ class App extends Component {
 
   render() {
     try {
+      // Handle color names (e.g. "red")
       let temp = cssColors[this.state.color];
       if (temp) {
         temp = `rgb(${temp[0]}, ${temp[1]}, ${temp[2]})`;
       } else {
         temp = this.state.color;
+        if (IS_HEX_WITHOUT_HASH.test(temp)) {
+          temp = `#${temp}`;
+        }
       }
       // This will throw if this.state.color is invalid,
       // leaving us with the old colors if somebody enters
