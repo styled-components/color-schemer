@@ -48,7 +48,7 @@ class App extends Component {
 						data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" />
 				</Link>
 	      <BigTile bg={color}>
-					<Title color={inverted}>Colors</Title>
+					<Title color={inverted}>Color Schemer</Title>
 					<Input
 						type="text"
 						autoFocus
