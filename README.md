@@ -44,6 +44,15 @@ colors
 
 We take the entered color, convert it to HSL and render the same hue and saturation with lightness' of `0.1`, `0.3`, `0.5`, `0.7` and `0.9`.
 
+## Running locally
+
+```sh
+git clone https://github.com/styled-components/color-schemer
+cd color-schemer # Go to downloaded directory
+npm install      # Install dependencies
+npm start        # Start the development server
+```
+
 ## Uses
 
 - [`create-react-app`](https://github.com/facebookincubator/create-react-app)
