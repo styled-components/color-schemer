@@ -15,4 +15,4 @@ injectGlobal`
 	@media screen and (min-aspect-ratio: 2/3) {
 		overflow: hidden;
 	}
-`
+`;

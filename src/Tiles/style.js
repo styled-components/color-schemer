@@ -7,4 +7,4 @@ export const Wrapper = styled.div`
 	@media screen and (max-aspect-ratio: 2/3) {
 		flex-direction: column;
 	}
-`
+`;

@@ -7,7 +7,7 @@ export const BigTile = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-`
+`;
 
 export const Input = styled.input`
 	background: transparent;
@@ -23,20 +23,20 @@ export const Input = styled.input`
 	&:hover {
 		outline: none;
 	}
-`
+`;
 
 export const Title = styled.h1`
 	position: absolute;
 	top: 0;
 	color: ${props => props.color};
-`
+`;
 
 export const ForkBanner = styled.img`
 	position: absolute;
 	top: 0;
 	right: 0;
 	border: 'none';
-`
+`;
 
 export const Link = styled.a``;
 

@@ -16,9 +16,9 @@ export const Wrapper = styled.button`
 		width: 100%;
 		height: 10vh;
 	}
-`
+`;
 
 export const Text = styled.p`
 	font-size: 1.75em;
 	color: ${props => props.color};
-`
+`;
