@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { invert } from 'polished';
+import cssColors from 'color-name';
 import Tiles from '../Tiles';
 
 import {
@@ -25,11 +26,17 @@ class App extends Component {
 
   render() {
 		try {
+			let temp = cssColors[this.state.color];
+			if (temp) {
+				temp = `rgb(${temp[0]}, ${temp[1]}, ${temp[2]})`;
+			} else {
+				temp = this.state.color;
+			}
 			// This will throw if this.state.color is invalid,
 			// leaving us with the old colors if somebody enters
 			// an invalid color
-			inverted = invert(this.state.color);
-			color = this.state.color;
+			inverted = invert(temp);
+			color = temp;
 		} catch (err) {}
     return (
 			<Wrapper>

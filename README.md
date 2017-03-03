@@ -46,6 +46,7 @@ We take the entered color, convert it to HSL and render the same hue and saturat
 - [💅 `styled-components`](https://github.com/styled-components/styled-components)
 - [✨ `polished`](https://github.com/styled-components/polished)
 - [clipboard.js](https://clipboardjs.com/)
+- [`color-name`](https://npm.im/color-name)
 
 ## License
 

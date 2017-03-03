@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "clipboard": "^1.6.1",
+    "color-name": "^1.1.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "styled-components": "^1.4.4"
