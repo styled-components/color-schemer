@@ -42,7 +42,7 @@ We take the entered color, convert it to HSL and render the same hue and saturat
 
 ## Uses
 
-- [React](https://github.com/facebook/react)
+- [`create-react-app`](https://github.com/facebookincubator/create-react-app)
 - [💅 `styled-components`](https://github.com/styled-components/styled-components)
 - [✨ `polished`](https://github.com/styled-components/polished)
 - [clipboard.js](https://clipboardjs.com/)
