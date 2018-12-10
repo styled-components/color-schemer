@@ -8,23 +8,22 @@
     "lint-staged": "^3.3.1",
     "pre-commit": "^1.2.2",
     "prettier": "^0.20.0",
-    "react-scripts": "0.9.3"
+    "react-scripts": "2.1.1"
   },
   "dependencies": {
     "clipboard": "^1.6.1",
-    "color-name": "^1.1.1",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "styled-components": "^1.4.4",
-    "polished": "^1.0.0"
+    "color-name": "^1.1.4",
+    "polished": "^2.3.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "now-build": "react-scripts build && mv build dist",
     "lint:staged": "lint-staged"
   },
   "lint-staged": {
@@ -33,5 +32,11 @@
       "git add"
     ]
   },
-  "pre-commit": "lint:staged"
+  "pre-commit": "lint:staged",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

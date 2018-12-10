@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { invert } from 'polished';
 import cssColors from 'color-name';
+import GlobalStyles from '../global-styles';
 import Tiles from '../Tiles';
 
 import { BigTile, Input, Title, ForkBanner, Link, Wrapper } from './style';
@@ -39,6 +40,7 @@ class App extends Component {
     } catch (err) {}
     return (
       <Wrapper>
+        <GlobalStyles />
         <BigTile bg={color}>
           <Title color={inverted}>Color Schemer</Title>
           <Input
