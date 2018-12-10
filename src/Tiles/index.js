@@ -1,21 +1,17 @@
 import React from 'react';
-// These are currently not officially exposed, so we import them directly
-import parseColor from 'polished/lib/internalHelpers/_parseColorString';
-import rgbToHsl from 'polished/lib/internalHelpers/_rgbToHsl';
-import hslToHex from 'polished/lib/internalHelpers/_hslToHex';
+import { setLightness } from 'polished';
 
 import Tile from '../Tile';
 import { Wrapper } from './style';
 
 export default ({ color }) => {
-  const base = rgbToHsl(parseColor(color));
   return (
     <Wrapper>
-      <Tile color={hslToHex(base.hue, base.saturation, 0.1)} />
-      <Tile color={hslToHex(base.hue, base.saturation, 0.3)} />
-      <Tile color={hslToHex(base.hue, base.saturation, 0.5)} />
-      <Tile color={hslToHex(base.hue, base.saturation, 0.7)} />
-      <Tile color={hslToHex(base.hue, base.saturation, 0.9)} />
+      <Tile color={setLightness(0.1, color)} />
+      <Tile color={setLightness(0.3, color)} />
+      <Tile color={setLightness(0.5, color)} />
+      <Tile color={setLightness(0.7, color)} />
+      <Tile color={setLightness(0.9, color)} />
     </Wrapper>
   );
 };
