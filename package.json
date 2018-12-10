@@ -2,7 +2,6 @@
   "name": "colors",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://styled-components.com/color-schemer/",
   "devDependencies": {
     "gh-pages": "^0.12.0",
     "lint-staged": "^3.3.1",

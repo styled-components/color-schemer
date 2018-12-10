@@ -1,8 +1,8 @@
-# Color Schemer
+# [Color Schemer](https://colors.styled-components.com)
 
-**[styled-components.com/color-schemer](https://styled-components.com/color-schemer/)**
+**[colors.styled-components.com](https://colors.styled-components.com)**
 
-[![The color schemer app](https://cloud.githubusercontent.com/assets/7525670/23553930/c8f83efc-001a-11e7-810a-7c7916dc1f29.png)](https://styled-components.com/color-schemer/)
+[![The color schemer app](https://cloud.githubusercontent.com/assets/7525670/23553930/c8f83efc-001a-11e7-810a-7c7916dc1f29.png)](https://colors.styled-components.com)
 
 A demo React app built with [`💅 styled-components`](https://github.com/styled-components/styled-components) and [`✨ polished`](https://github.com/styled-components/polished).
 
